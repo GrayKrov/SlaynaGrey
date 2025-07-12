@@ -180,3 +180,74 @@ html[data-theme="dark"] .links a:focus {
 html[data-theme="dark"] footer {
   color: #b399c3;
 }
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+
+  .avatar {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .bio {
+    max-width: 90vw;
+    padding: 1rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .links {
+    max-width: 90vw;
+  }
+
+  .links a {
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  .avatar {
+    width: 125px;
+    height: 125px;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .bio {
+    max-width: 480px;
+  }
+
+  .links a {
+    height: 55px;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
