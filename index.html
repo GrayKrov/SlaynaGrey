@@ -13,57 +13,116 @@
   <body>
     <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
 
-    <img src="images/SlaynaPNG.jpg" class="avatar" alt="SlaynaGrey" />
-    <h1>SLAYNA</h1>
-    <h2 class="subtitle">Creator • Gamer • Cozy Gremlin</h2>
+    <main>
+      <img src="images/SlaynaPNG.jpg" class="avatar" alt="SlaynaGrey" />
 
-    <div class="bio">
-      SlaynaGrey is a cozy gremlin VTuber and content creator with a love for
-      storytelling, gaming, and community vibes. Whether streaming live or
-      crafting new content, she’s always bringing her own flavor of fun and
-      creativity to the screen.
-    </div>
+      <h1>SLAYNA</h1>
+      <h2 class="subtitle">Creator • Gamer • Cozy Gremlin</h2>
 
-    <div class="quote">“Be kind, stay cozy, and never stop slaying.”</div>
+      <!-- Tags/Chips -->
+      <div class="tags" aria-label="About me tags">
+        <span class="tag">Storyteller</span>
+        <span class="tag">Streamer</span>
+        <span class="tag">Cozy Vibes</span>
+        <span class="tag">Community Lover</span>
+      </div>
 
-    <div class="links">
-      <a href="https://www.twitch.tv/slaynagrey" target="_blank">
-        <i class="fab fa-twitch"></i> Twitch
-      </a>
-      <a href="https://www.youtube.com/@slenathegrey" target="_blank">
-        <i class="fab fa-youtube"></i> YouTube
-      </a>
-      <a href="https://www.tiktok.com/@slna.grey" target="_blank">
-        <i class="fab fa-tiktok"></i> TikTok
-      </a>
-      <a href="https://bsky.app/profile/slenagrey.bsky.social" target="_blank">
-        <i class="fas fa-feather"></i> Bluesky
-      </a>
-      <a href="https://itch.io/profile/slenagrey" target="_blank">
-        <i class="fas fa-gamepad"></i> Itch.io
-      </a>
-      <a href="https://www.instagram.com/slaynagreyvt" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-      <a href="https://x.com/SlaynaGrey" target="_blank">
-        <i class="fab fa-x-twitter"></i> Twitter
-      </a>
-    </div>
+      <section class="bio-section">
+        <p class="bio">
+          SlaynaGrey is a cozy gremlin VTuber and content creator with a love
+          for storytelling, gaming, and community vibes. Whether streaming live
+          or crafting new content, she’s always bringing her own flavor of fun
+          and creativity to the screen.
+        </p>
+        <blockquote class="quote" aria-label="Inspirational quote">
+          “Be kind, stay cozy, and never stop slaying.”
+        </blockquote>
+      </section>
+
+      <nav class="links" aria-label="Social Media Links">
+        <a
+          href="https://www.twitch.tv/slaynagrey"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit SlaynaGrey's Twitch channel"
+          title="Twitch"
+        >
+          <i class="fab fa-twitch"></i> Twitch
+        </a>
+        <a
+          href="https://www.youtube.com/@slenathegrey"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit SlaynaGrey's YouTube channel"
+          title="YouTube"
+        >
+          <i class="fab fa-youtube"></i> YouTube
+        </a>
+        <a
+          href="https://www.tiktok.com/@slna.grey"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit SlaynaGrey's TikTok profile"
+          title="TikTok"
+        >
+          <i class="fab fa-tiktok"></i> TikTok
+        </a>
+        <a
+          href="https://bsky.app/profile/slenagrey.bsky.social"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit SlaynaGrey's Bluesky profile"
+          title="Bluesky"
+        >
+          <i class="fas fa-feather"></i> Bluesky
+        </a>
+        <a
+          href="https://itch.io/profile/slenagrey"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit SlaynaGrey's Itch.io profile"
+          title="Itch.io"
+        >
+          <i class="fas fa-gamepad"></i> Itch.io
+        </a>
+        <a
+          href="https://www.instagram.com/slaynagreyvt"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit SlaynaGrey's Instagram profile"
+          title="Instagram"
+        >
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a
+          href="https://x.com/SlaynaGrey"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit SlaynaGrey's Twitter profile"
+          title="Twitter"
+        >
+          <i class="fab fa-x-twitter"></i> Twitter
+        </a>
+      </nav>
+    </main>
 
     <footer>
       <p>Thank you for stopping by 🌸</p>
     </footer>
 
-    <script>
-      const toggleBtn = document.getElementById("theme-toggle");
-      toggleBtn.addEventListener("click", () => {
-        const html = document.documentElement; // <html>
-        if (html.getAttribute("data-theme") === "dark") {
-          html.removeAttribute("data-theme");
-        } else {
-          html.setAttribute("data-theme", "dark");
-        }
-      });
-    </script>
+    <!-- Contact Box -->
+    <div class="contact-box" aria-label="Contact information">
+      <p>
+        Say hi!
+        <a
+          href="mailto:contact@slaynagrey.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >contact@slaynagrey.com</a
+        >
+      </p>
+    </div>
+
+    <script src="scripts.js" defer></script>
   </body>
 </html>
